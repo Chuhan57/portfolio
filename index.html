@@ -700,7 +700,7 @@
                             </div>
                         </div>
                     
-                </div> --> -->
+                </div> --> 
         <!-- <div>
                     <a class="work-line"  href="">
                         <div class="works-card" data-aos="fade-down" data-aos-delay="550">
@@ -730,7 +730,7 @@
         </div>
         </section>
 
-        <!-- work end
+        <!-- work end -->
 
         <!-- Contact Section -->
         <section class="contact section bd_grid" id="contact">
@@ -761,71 +761,49 @@
                         </div>
                     </div>
                 </div>
-<!--                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000006qLXx" class="contact-form grid" data-aos="fade-down" data-aos-delay="450">
+                
+
+                <form
+                    action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000006qLXx"
+                    method="POST" class="contact-form grid" data-aos="fade-down" data-aos-delay="450">
+
+                    <!-- Hidden Fields Required by Salesforce -->
+                    <input type="hidden" name="oid" value="00DgK000006qLXx">
+                    <input type="hidden" name="retURL" value="https://chuhan57.github.io/portfolio/">
+
+                    <!-- Contact Inputs Grid -->
                     <div class="contact-inputs grid">
                         <div class="contact-content">
-                            <label for="" class="contact-label">Name :</label>
-                            <input type="text" name="first_name" placeholder="Enter Your Name" id="name" class="contact-input">
+                            <label for="first_name" class="contact-label">Name :</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Enter Your Name"
+                                class="contact-input" maxlength="40">
                         </div>
+
                         <div class="contact-content">
-                            <label for="" class="contact-label">Email :</label>
-                            <input type="email" name='email' placeholder="Enter Your Email address" id="email" class="contact-input">
+                            <label for="email" class="contact-label">Email :</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Your Email address"
+                                class="contact-input" maxlength="80">
                         </div>
+
                         <div class="contact-content">
-                            <label for="" class="contact-label">Company Name</label>
-                            <input type="text" name='company' placeholder="Enter Your Company Name" id="email" class="contact-input">
+                            <label for="company" class="contact-label">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Enter Your Company Name"
+                                class="contact-input" maxlength="40">
                         </div>
                     </div>
+
                     <div class="contact-content">
-                        <label for="" class="contact-label">Message :</label>
-                        <textarea name="description" id="" cols="0" rows="5" placeholder="Enter Your Message"
+                        <label for="description" class="contact-label">Message :</label>
+                        <textarea name="description" id="description" cols="0" rows="5" placeholder="Enter Your Message"
                             class="contact-input"></textarea>
                     </div>
-     
+
                     <div>
-
-                        <button type='submit'>Submit </button>
-<!--                         <button type='submit' class="button button--flex">Send Message <i class="bx bx-send button__icon"></i></button>
-                    </div> -->
-                </form> -->
-
-
-
-                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000006qLXx"
-    method="POST" class="contact-form grid" data-aos="fade-down" data-aos-delay="450">
-
-    <!-- Hidden Fields Required by Salesforce -->
-    <input type="hidden" name="oid" value="00DgK000006qLXx">
-    <input type="hidden" name="retURL" value="https://chuhan57.github.io/portfolio/">
-
-    <!-- Contact Inputs Grid -->
-    <div class="contact-inputs grid">
-        <div class="contact-content">
-            <label for="first_name" class="contact-label">Name :</label>
-            <input type="text" id="first_name" name="first_name" placeholder="Enter Your Name" class="contact-input" maxlength="40">
-        </div>
-
-        <div class="contact-content">
-            <label for="email" class="contact-label">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email address" class="contact-input" maxlength="80">
-        </div>
-
-        <div class="contact-content">
-            <label for="company" class="contact-label">Company Name</label>
-            <input type="text" id="company" name="company" placeholder="Enter Your Company Name" class="contact-input" maxlength="40">
-        </div>
-    </div>
-
-    <div class="contact-content">
-        <label for="description" class="contact-label">Message :</label>
-        <textarea name="description" id="description" cols="0" rows="5" placeholder="Enter Your Message" class="contact-input"></textarea>
-    </div>
-
-    <div>
-        <button type="submit">Submit</button>
-    </div>
-</form>
+                        <button type="submit" class="button button--flex" style="border: none; cursor: pointer;" >Submit</button>
+                    </div>
+                </form>
             </div>
+            
 
         </section>
 
